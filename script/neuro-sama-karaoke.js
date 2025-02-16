@@ -6,10 +6,10 @@ const trackNameElement = document.getElementById('trackName');
 const trackImageElement = document.getElementById('trackImage');
 
 const audioFiles = [
-    { name: 'Neuro - The Phoenix', src: 'Neuro-sama The Phoenix.mp3', image: 'trackimages/neurohead.jpg' },
-    { name: 'Neuro - Believer', src: 'Neuro-Sama Believer.mp3', image: 'trackimages/neurohead.jpg' },
-    { name: 'Neuro - In The End', src: 'Neuro-Sama In The End.mp3', image: 'trackimages/neurohead.jpg' },
-    { name: 'Neuro - A Thousand Years', src: 'Neuro-sama A Thousand Years.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - The Phoenix', src: 'music/Neuro-sama The Phoenix.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Believer', src: 'music/Neuro-Sama Believer.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - In The End', src: 'music/Neuro-Sama In The End.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - A Thousand Years', src: 'music/Neuro-sama A Thousand Years.mp3', image: 'trackimages/neurohead.jpg' },
 ];
 
 let currentTrack = 0;
