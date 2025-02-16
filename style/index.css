@@ -95,3 +95,13 @@ header {
   width: 250px;
   height: auto;
 }
+
+.groupInThree {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  aside, section, article {
+    width: 100%;
+  }
+}
