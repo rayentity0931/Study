@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url('../trackimages/neuroBackground.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  padding: 20px;
+}
+
+.scroll-box {
+  width: 350px;
+  height: 700px;
+  padding: 15px;
+  background: transparent;
+  overflow-y: auto;
+  position: fixed;
+  left: 120px;
+  top: 130px;
+  font-size: 30px;
+  color: #fff;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  line-height: 1.5;
+  pointer-events: none;
+}
+
+.scroll-box::-webkit-scrollbar {
+  display: none;
+}
+
+.music-player-body {
+  width: 480px;
+  height: 585px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5em;
+  color: #fff;
+}
+
+h3 {
+  margin-top: 0px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.track-image {
+  max-width: 90%;
+  height: 255px;
+  margin-top: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+audio {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.controls button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  width: 60px;
+  height: 52px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 35px;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background-color: #91deffd3;
+}
+
+.container .scroll-box p {
+  display: block;
+  pointer-events: auto;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 10%, 13%, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.container .scroll-box p:hover {
+  background-color: #8adcff94;
+}
