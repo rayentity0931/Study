@@ -26,10 +26,7 @@ function togglePlayPause() {
         isPlaying = false;
         playPauseButton.textContent = '\u25BA';
     } else {
-        audioPlayer.play().catch((error) => {
-            console.error('播放錯誤:', error);
-            alert('無法播放音樂。');
-        });
+        audioPlayer.play();
         isPlaying = true;
         playPauseButton.textContent = '\u275A\u275A';
     }
@@ -44,10 +41,7 @@ nextButton.addEventListener('click', () => {
     audioPlayer.src = audioFiles[currentTrack].src;
     updateTrackName();
     if (isPlaying) {
-        audioPlayer.play().catch((error) => {
-            console.error('播放錯誤:', error);
-            alert('無法播放音樂。');
-        });
+        audioPlayer.play();
     }
 });
 
@@ -56,10 +50,7 @@ prevButton.addEventListener('click', () => {
     audioPlayer.src = audioFiles[currentTrack].src;
     updateTrackName();
     if (isPlaying) {
-        audioPlayer.play().catch((error) => {
-            console.error('播放錯誤:', error);
-            alert('無法播放音樂。');
-        });
+        audioPlayer.play();
     }
 });
 
