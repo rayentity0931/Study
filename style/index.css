@@ -25,6 +25,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  top: 7px;
   padding: 20px 100px;
   display: flex;
   justify-content: space-between;
@@ -99,69 +100,8 @@ header {
   text-align: center;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  header {
-    padding: 20px 50px;
-  }
-
-  .logo {
-    font-size: 1.5em;
-  }
-
-  .navigation a {
-    font-size: 1em;
-    margin-left: 20px;
-  }
-
-  #clock {
-    font-size: 4rem;
-    width: 400px;
-    bottom: 60px;
-  }
-
-  .neuroLogo {
-    width: 200px;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    padding: 20px 20px;
-  }
-
-  .logo {
-    font-size: 1.2em;
-  }
-
-  .navigation a {
-    font-size: 0.9em;
-    margin-left: 15px;
-  }
-
-  #clock {
-    font-size: 3rem;
-    width: 300px;
-    bottom: 50px;
-  }
-
-  .neuroLogo {
-    width: 150px;
-    bottom: 10px;
-    right: 10px;
-  }
-
-  /* Stacked navigation on small screens */
-  .navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-  }
-
-  .navigation a {
-    margin: 10px 0;
+@media screen and (max-width: 600px) {
+  aside, section, article {
+    width: 100%;
   }
 }
