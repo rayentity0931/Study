@@ -50,15 +50,15 @@
     padding: 3vw;
     text-align: center;
     overflow: visible;
-    display: inline block;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: auto; /* 讓它水平置中 */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* 讓它真正置中 */
   }
   
   .scroll-box p {
