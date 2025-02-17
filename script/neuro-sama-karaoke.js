@@ -8,10 +8,12 @@ const audio = document.getElementById('audioPlayer');
 const customProgress = document.getElementById('customProgress');
 
 const audioFiles = [
-    { name: 'Neuro - The Phoenix', src: 'music/Neuro-sama The Phoenix.mp3', image: 'trackimages/neurohead.jpg' },
-    { name: 'Neuro - Believer', src: 'music/Neuro-Sama Believer.mp3', image: 'trackimages/neurohead.jpg' },
-    { name: 'Neuro - In The End', src: 'music/Neuro-Sama In The End.mp3', image: 'trackimages/neurohead.jpg' },
-    { name: 'Neuro - A Thousand Years', src: 'music/Neuro-sama A Thousand Years.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - The Phoenix', src: 'NeuroMusic/The Phoenix.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Believer', src: 'NeuroMusic/Believer.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro X Evil - In The End', src: 'NeuroMusic/In The End.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - A Thousand Years', src: 'NeuroMusic/A Thousand Years.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Discord', src: 'NeuroMusic/Discord.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Evil - Youre Gonna Go Far Kid', src: 'NeuroMusic/Youre Gonna Go Far Kid.mp3', image: 'trackimages/neurohead.jpg' },
 ];
 
 let currentTrack = 0;
