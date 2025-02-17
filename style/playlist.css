@@ -102,7 +102,7 @@
       text-align: center;
       white-space: nowrap; /* 確保每行只有一行文字 */
       overflow: hidden;
-      display: inline-block; /* 保證框框隨著文字自動變寬 */
+      display: block; /* 保證框框隨著文字自動變寬 */
       width: auto; /* 確保寬度隨文字變化 */
     }
   }
