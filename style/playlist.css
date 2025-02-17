@@ -50,7 +50,7 @@
     padding: 3vw;
     text-align: center;
     overflow: visible;
-    display: block;
+    display: inline block;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +83,7 @@
   @media (max-width: 768px) {
     .scroll-box {
       width: 90%;
-      max-width: none; /* 移除桌面版的最大寬度 */
+      
       max-height: 90vh; /* 增加最大高度以適應手機螢幕 */
       margin: auto; /* 使歌單在手機上置中 */
       padding: 10px;
