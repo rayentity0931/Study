@@ -88,21 +88,4 @@
       margin: auto; /* 使歌單在手機上置中 */
       padding: 10px;
     }
-
-    .scroll-box p {
-      cursor: pointer;
-      color: rgb(255, 255, 255);
-      background-color: hsla(0, 10%, 13%, 0.5);
-      backdrop-filter: blur(5px);
-      padding: 10px 20px; /* 增加左右間距 */
-      margin-bottom: 10px; /* 增加上下間距 */
-      transition: 0.3s;
-      border-radius: 5px;
-      font-size: clamp(14px, 6vw, 22px); /* 調整字體大小 */
-      text-align: center;
-      white-space: nowrap; /* 確保每行只有一行文字 */
-      overflow: hidden;
-      display: block; /* 保證框框隨著文字自動變寬 */
-      width: auto; /* 確保寬度隨文字變化 */
-    }
   }
