@@ -90,6 +90,8 @@
     }
 
     .scroll-box p {
+      display: block;
+      pointer-events: auto;
       cursor: pointer;
       color: rgb(255, 255, 255);
       background-color: hsla(0, 10%, 13%, 0.5);
@@ -97,11 +99,5 @@
       padding: 5px;
       margin-bottom: 8px;
       transition: 0.3s;
-      border-radius: 5px;
-      font-size: clamp(14px, 6vw, 22px); /* 調整字體大小 */
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block; /* 保證框框隨著文字自動變寬 */
     }
   }
