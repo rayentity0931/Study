@@ -22,10 +22,11 @@ body {
 
 header {
   position: fixed;
+  background-color: black;
   top: 0;
   left: 0;
   width: 100%;
-  padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 100px); /* 讓間距適應不同螢幕 */
+  padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 100px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +40,13 @@ header {
   text-decoration: none;
   font-size: clamp(0.8em, 4vw, 2em);
   margin: 0;
+  padding-left: 10px;
+}
+
+.navigation {
+  display: flex;
+  gap: clamp(10px, 3vw, 20px); /* 讓按鈕間距隨裝置變化 */
+  margin-left: auto; /* 確保導航靠右 */
 }
 
 .navigation a {
@@ -47,7 +55,6 @@ header {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 2vw;
 }
 
 .navigation a::after {
