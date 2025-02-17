@@ -70,7 +70,7 @@
     margin-bottom: 8px;
     transition: 0.3s;
     border-radius: 5px;
-    font-size: clamp(1.5em, 4vw, 3em);
+    font-size: clamp(1.5em, 4vw, 5em);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
