@@ -80,13 +80,22 @@ const songList = document.querySelector('.scroll-box');
 
 let isListVisible = false;
 
+// 檢查是否為手機設備
+const isMobile = window.innerWidth <= 768;
+
 toggleListButton.addEventListener('click', () => {
-    if (isListVisible) {
-        songList.style.display = 'none';  // 隱藏歌單
+    if (isMobile) {
+        // 手機版，切換到新介面顯示歌單
+        window.location.href = "playlist.html"; // 導向新介面
     } else {
-        songList.style.display = 'block'; // 顯示歌單
+        // 桌面版，顯示或隱藏歌單
+        if (isListVisible) {
+            songList.style.display = 'none';  // 隱藏歌單
+        } else {
+            songList.style.display = 'block'; // 顯示歌單
+        }
+        isListVisible = !isListVisible;
     }
-    isListVisible = !isListVisible;
 });
 
 // 更新進度條的函數

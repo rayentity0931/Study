@@ -1,0 +1,83 @@
+/* 全局樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: url('../trackimages/neuroBackground.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    overflow: hidden; /* 防止超出邊界 */
+  }
+  
+  header {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    flex-wrap: nowrap;
+  }
+  
+  .logo {
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    font-size: clamp(0.8em, 4vw, 2em);
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  .scroll-box {
+    width: 90%; /* 讓歌單寬度適應手機和桌面版 */
+    max-width: 400px; /* 最大寬度 */
+    max-height: 80vh; /* 限制最大高度 */
+    padding: 15px;
+    background: transparent;
+    overflow-y: auto;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.5;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
+  }
+  
+  .scroll-box p {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: hsla(0, 10%, 13%, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 5px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .scroll-box p:hover {
+    background-color: #8adcff94;
+  }
+  
+  @media (max-width: 768px) {
+    .scroll-box {
+      width: 90%;
+      max-width: none; /* 移除桌面版的最大寬度 */
+      max-height: 90vh; /* 增加最大高度以適應手機螢幕 */
+      margin: auto; /* 使歌單在手機上置中 */
+      padding: 10px;
+    }
+  }
