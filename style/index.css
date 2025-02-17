@@ -25,12 +25,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  top: 7px;
-  padding: 20px 100px;
+  padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 100px); /* 讓間距適應不同螢幕 */
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  flex-wrap: nowrap; /* 確保內容不會換行 */
 }
 
 .logo {
@@ -108,5 +108,22 @@ header {
 @media screen and (max-width: 600px) {
   aside, section, article {
     width: 100%;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .navigation {
+    gap: 5px;
+  }
+
+  .navigation a {
+    font-size: 0.8em;
+    padding: 5px 6px;
   }
 }

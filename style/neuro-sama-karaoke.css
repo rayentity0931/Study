@@ -68,34 +68,34 @@ body {
 }
 
 .music-player-body {
-  width: clamp(320px, 60vw, 480px); /* 在小螢幕時縮小，最大 480px */
-  height: auto; /* 避免在小螢幕上過高 */
+  width: clamp(320px, 60vw, 480px);
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   border-radius: 20px;
-  padding: 3vw; /* 適應不同螢幕 */
+  padding: 3vw;
   text-align: center;
-  overflow: visible; /* 確保內容不會超出 */
+  overflow: visible;
   display: block;
   flex-direction: column;
-  justify-content: space-between; /* 讓內容有間距 */
+  justify-content: space-between;
   align-items: center;
 }
 
 h2 {
-  font-size: clamp(2em, 4vw, 3em); /* 字體最小 2em，最大 3.5em */
+  font-size: clamp(2em, 4vw, 3em);
   color: #fff;
 }
 
 h3 {
-  font-size: clamp(1em, 3vw, 1.5em); /* 最小 1.5em，最大 2em */
+  font-size: clamp(1em, 3vw, 1.5em);
   margin-top: 0px;
   color: #fff;
 }
 
 .track-image {
-  width: clamp(100px, 80%, 300px); /* 最小 150px，最大 300px，適應不同螢幕 */
-  height: auto; /* 讓高度自適應，保持比例 */
+  width: clamp(100px, 80%, 300px);
+  height: auto;
   max-height: 300px; /* 避免圖片過高 */
   margin-top: 2vh; /* 讓間距跟著變化 */
   border: 3px solid black;
