@@ -14,6 +14,10 @@ const audioFiles = [
     { name: 'Neuro - A Thousand Years', src: 'NeuroMusic/A Thousand Years.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Neuro - Discord', src: 'NeuroMusic/Discord.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Evil - Youre Gonna Go Far Kid', src: 'NeuroMusic/Youre Gonna Go Far Kid.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Evil - Monster', src: 'NeuroMusic/Monster.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Wellerman', src: 'NeuroMusic/Wellerman.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Firework', src: 'NeuroMusic/Firework.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro X Evil - Get Lucky', src: 'NeuroMusic/Get Lucky.mp3', image: 'trackimages/neurohead.jpg' },
 ];
 
 let currentTrack = 0;
