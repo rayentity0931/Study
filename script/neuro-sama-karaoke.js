@@ -4,6 +4,8 @@ const nextButton = document.getElementById('nextButton');
 const prevButton = document.getElementById('prevButton');
 const trackNameElement = document.getElementById('trackName');
 const trackImageElement = document.getElementById('trackImage');
+const audio = document.getElementById('audioPlayer');
+const customProgress = document.getElementById('customProgress');
 
 const audioFiles = [
     { name: 'Neuro - The Phoenix', src: 'music/Neuro-sama The Phoenix.mp3', image: 'trackimages/neurohead.jpg' },
@@ -65,6 +67,12 @@ document.querySelectorAll('.scroll-box p').forEach((songElement, index) => {
             playPauseButton.textContent = '\u25BA';
         }
     });
+});
+
+// 更新進度條的函數
+audio.addEventListener('timeupdate', () => {
+  const progress = (audio.currentTime / audio.duration) * 100;
+  customProgress.style.width = `${progress}%`;
 });
 
 audioPlayer.volume = 0.5;

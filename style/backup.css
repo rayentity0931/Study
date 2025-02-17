@@ -84,8 +84,8 @@ header {
 
 .mainTitle {
   color: #fff;
-  font-size: 6em;
-  margin-top: 60px;
+  font-size: clamp(2em, 10vw, 5em);
+  margin-top: 10vh;
   text-align: center;
 }
 
