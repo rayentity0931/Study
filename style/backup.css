@@ -17,15 +17,16 @@ body {
 
 header {
   position: fixed;
+  background-color: black;
   top: 0;
   left: 0;
   width: 100%;
-  top: 7px;
-  padding: 20px 100px;
+  padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 100px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -34,6 +35,7 @@ header {
   text-decoration: none;
   font-size: clamp(0.8em, 4vw, 2em);
   margin: 0;
+  padding-left: 10px;
 }
 
 .mainTitle {

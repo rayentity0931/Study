@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 99;
-  flex-wrap: nowrap; /* 確保內容不會換行 */
+  flex-wrap: nowrap;
 }
 
 .logo {
