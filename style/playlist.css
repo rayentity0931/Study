@@ -42,9 +42,9 @@
   }
   
   .scroll-box {
-    width: 90%; /* 讓歌單寬度適應手機和桌面版 */
-    max-width: 400px; /* 最大寬度 */
-    max-height: 80vh; /* 限制最大高度 */
+    width: 90%;
+    max-width: 500px;
+    max-height: 100vh;
     padding: 15px;
     background: transparent;
     overflow-y: auto;
@@ -65,7 +65,7 @@
     margin-bottom: 8px;
     transition: 0.3s;
     border-radius: 5px;
-    flex-wrap: nowrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 14px; 
