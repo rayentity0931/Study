@@ -56,6 +56,7 @@ prevButton.addEventListener('click', () => {
     }
 });
 
+// 點擊歌單中的歌曲時
 document.querySelectorAll('.scroll-box p').forEach((songElement, index) => {
     songElement.addEventListener('click', () => {
         if (index < audioFiles.length) {
