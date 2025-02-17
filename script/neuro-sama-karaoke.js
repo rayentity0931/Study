@@ -65,6 +65,8 @@ document.querySelectorAll('.scroll-box p').forEach((songElement, index) => {
             audioPlayer.pause();
             isPlaying = false;
             playPauseButton.textContent = '\u25BA';
+            // 保存選擇的歌曲到 localStorage
+            localStorage.setItem('currentTrack', currentTrack);
         }
     });
 });
@@ -103,6 +105,18 @@ audio.addEventListener('timeupdate', () => {
   const progress = (audio.currentTime / audio.duration) * 100;
   customProgress.style.width = `${progress}%`;
 });
+
+// 從 localStorage 中加載歌曲
+const savedTrack = localStorage.getItem('currentTrack');
+if (savedTrack !== null) {
+    currentTrack = parseInt(savedTrack, 10);
+    audioPlayer.src = audioFiles[currentTrack].src;
+    updateTrackName();
+    audioPlayer.play();
+} else {
+    audioPlayer.src = audioFiles[0].src;
+    updateTrackName();
+}
 
 audioPlayer.volume = 0.5;
 
