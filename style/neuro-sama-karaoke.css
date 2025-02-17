@@ -82,6 +82,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: auto; /* 讓它水平置中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 讓它真正置中 */
 }
 
 h2 {
