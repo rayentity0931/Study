@@ -69,6 +69,26 @@ document.querySelectorAll('.scroll-box p').forEach((songElement, index) => {
     });
 });
 
+// 創建並顯示切換歌單的按鈕
+const toggleListButton = document.createElement('button');
+toggleListButton.textContent = '📜 歌單';
+toggleListButton.classList.add('toggle-list-button');
+document.body.appendChild(toggleListButton);
+
+const musicPlayer = document.querySelector('.music-player-body');
+const songList = document.querySelector('.scroll-box');
+
+let isListVisible = false;
+
+toggleListButton.addEventListener('click', () => {
+    if (isListVisible) {
+        songList.style.display = 'none';  // 隱藏歌單
+    } else {
+        songList.style.display = 'block'; // 顯示歌單
+    }
+    isListVisible = !isListVisible;
+});
+
 // 更新進度條的函數
 audio.addEventListener('timeupdate', () => {
   const progress = (audio.currentTime / audio.duration) * 100;

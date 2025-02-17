@@ -148,6 +148,7 @@ audio::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  gap: 5px;
 }
 
 .controls button {
@@ -155,8 +156,8 @@ audio::-webkit-media-controls-panel {
   color: #fff;
   border: none;
   border-radius: 15px;
-  width: clamp(35px, 12vw, 60px);
-  height: clamp(30px, 10vw, 52px);
+  width: clamp(40px, 15vw, 60px);
+  height: clamp(35px, 12vw, 52px);
   font-size: clamp(20px, 4vw, 35px);
   cursor: pointer;
   align-items: center;
@@ -182,4 +183,49 @@ audio::-webkit-media-controls-panel {
 
 .container .scroll-box p:hover {
   background-color: #8adcff94;
+}
+
+/* 按鈕樣式 */
+.toggle-list-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 100;
+  display: block;
+}
+
+.toggle-list-button:hover {
+  background-color: #91deffd3;
+}
+
+/* 初始狀態下，歌單隱藏 */
+.scroll-box {
+  width: 350px;
+  height: 700px;
+  padding: 15px;
+  background: transparent;
+  overflow-y: auto;
+  position: fixed;
+  left: 120px;
+  top: 130px;
+  font-size: 30px;
+  color: #fff;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  line-height: 1.5;
+  pointer-events: none;
+  display: none; /* 隱藏歌單 */
+}
+
+/* 顯示歌單時 */
+.scroll-box.show {
+  display: block;
 }

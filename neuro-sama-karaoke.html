@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="style/neuro-sama-karaoke.css">
   </head>
 
-  <header>
-    <a href="index.html" class="logo">Home</a>
-  </header>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Home</a>
+    </header>
 
-  <div class="container">
-    <div class="scroll-box">
+    <!-- 用於顯示/隱藏歌單的按鈕 -->
+    <button class="toggle-list-button">📜 歌單</button>
+
+    <div class="container">
+      <div class="scroll-box">
         <p>The Phoenix</p>
         <p>Believer</p>
         <p>In The End</p>
@@ -30,35 +34,31 @@
         <p>這是一些示範文本。</p>
         <p>這是一些示範文本。</p>
         <p>這是一些示範文本。</p>
-        <p>這是一些示範文本。</p>
-        <p>這是一些示範文本。</p>
-        <p>這是一些示範文本。</p>
-        <p>這是一些示範文本。</p>
-        <p>這是一些示範文本。</p>
-        <p>這是一些示範文本。</p>
+      </div>
     </div>
-</div>
 
-<div class="music-player-body">
-  <h2> Neuro Karaoke </h2>
+    <div class="music-player-body">
+      <h2>Neuro Karaoke</h2>
 
-  <img class="track-image" id="trackImage" src="images/neurohead.jpg" alt="Track Image">
+      <img class="track-image" id="trackImage" src="images/neurohead.jpg" alt="Track Image">
 
-  <h3 id="trackName"></h3>
-  <audio id="audioPlayer" controls>
-      <source src="music/Neuro-sama The Phoenix.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-  </audio>
-  <!-- 自定義進度條 -->
-  <div class="custom-progress-container">
-    <div id="customProgress" class="custom-progress"></div>
-  </div>
+      <h3 id="trackName"></h3>
+      <audio id="audioPlayer" controls>
+          <source src="music/Neuro-sama The Phoenix.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <!-- 自定義進度條 -->
+      <div class="custom-progress-container">
+        <div id="customProgress" class="custom-progress"></div>
+      </div>
 
-  <div class="controls">
-      <button class="prev-button" id="prevButton">&#9665;</button>
-      <button class="play-pause-button" id="playPauseButton">&#9658;</button>
-      <button class="next-button" id="nextButton">&#9655;</button>
-  </div>
-</div>
+      <div class="controls">
+          <button class="prev-button" id="prevButton">&#9665;</button>
+          <button class="play-pause-button" id="playPauseButton">&#9658;</button>
+          <button class="next-button" id="nextButton">&#9655;</button>
+      </div>
+    </div>
 
-<script src="script/neuro-sama-karaoke.js"></script>
+    <script src="script/neuro-sama-karaoke.js"></script>
+  </body>
+</html>
