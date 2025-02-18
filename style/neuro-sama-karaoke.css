@@ -156,7 +156,7 @@ audio::-webkit-media-controls-panel {
   color: #fff;
   border: none;
   border-radius: 15px;
-  width: clamp(40px, 15vw, 60px);
+  width: (40px, 15vw, 60px);
   height: clamp(35px, 12vw, 52px);
   font-size: clamp(20px, 4vw, 35px);
   cursor: pointer;
@@ -214,7 +214,7 @@ audio::-webkit-media-controls-panel {
   overflow-y: auto;
   position: fixed;
   left: 120px;
-  top: 130px;
+  top: 180px;
   font-size: 30px;
   color: #fff;
   overflow: auto;
@@ -228,4 +228,25 @@ audio::-webkit-media-controls-panel {
 /* 顯示歌單時 */
 .scroll-box.show {
   display: block;
+}
+
+.container #userInput {
+  font-size: clamp(18px, 4vw, 20px); /* 使用 clamp 來設置字體大小的範圍 */
+  padding: clamp(10px, 2vw, 15px); /* 使用 clamp 來設置內邊距的範圍 */
+  width: 60%; /* 使用百分比來讓寬度根據螢幕大小調整 */
+  max-width: 300px; /* 限制最大寬度 */
+  height: auto; /* 自動調整高度 */
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 讓它真正置中 */
+}
+
+@media (max-width: 768px) {
+  .container #userInput {
+    font-size: clamp(10px, 5vw, 18px); /* 更改螢幕寬度小於 768px 時的字體大小範圍 */
+    padding: clamp(12px, 3vw, 18px); /* 調整內邊距 */
+    width: 80%; /* 調整寬度 */
+    max-width: 280px; /* 限制最大寬度 */
+  }
 }
