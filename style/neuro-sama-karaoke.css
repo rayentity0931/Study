@@ -156,13 +156,14 @@ audio::-webkit-media-controls-panel {
   color: #fff;
   border: none;
   border-radius: 15px;
-  width: (40px, 15vw, 60px);
+  width: clamp(40px, 15vw, 60px);
   height: clamp(35px, 12vw, 52px);
   font-size: clamp(20px, 4vw, 35px);
   cursor: pointer;
   align-items: center;
   justify-content: center;
   margin: 0 10px;
+  transition: 0.3s;
 }
 
 .controls button:hover {
