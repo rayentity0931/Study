@@ -16,6 +16,17 @@ const audioFiles = [
     { name: 'Neuro X Evil - GODS', src: 'NeuroMusic/GODS.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Neuro - Racing Into The Night', src: 'NeuroMusic/Racing Into The Night.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Neuro - Want You Gone', src: 'NeuroMusic/Want You Gone.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Evil - Great War', src: 'NeuroMusic/Great War.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Your Reality', src: 'NeuroMusic/Your Reality.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - IDOL', src: 'NeuroMusic/IDOL.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Evil - The Rumbling', src: 'NeuroMusic/The Rumbling.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro X Evil - Mesmerizer', src: 'NeuroMusic/Mesmerizer.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Evil X Camila - EVIL', src: 'NeuroMusic/EVIL.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - LIFE', src: 'NeuroMusic/LIFE.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Radioactive', src: 'NeuroMusic/Radioactive.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - After Dark', src: 'NeuroMusic/After Dark.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Evil - Centuries', src: 'NeuroMusic/Centuries.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Cupid', src: 'NeuroMusic/Cupid.mp3', image: 'trackimages/neurohead.jpg' },
 ];
 
 // 點擊歌單中的歌曲時
