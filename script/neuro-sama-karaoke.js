@@ -18,6 +18,13 @@ const audioFiles = [
     { name: 'Neuro - Wellerman', src: 'NeuroMusic/Wellerman.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Neuro - Firework', src: 'NeuroMusic/Firework.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Neuro X Evil - Get Lucky', src: 'NeuroMusic/Get Lucky.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - ECHO', src: 'NeuroMusic/ECHO.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Waiting For Love', src: 'NeuroMusic/Waiting For Love.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro X Evil - In Hell We Live Lament', src: 'NeuroMusic/In Hell We Live Lament.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Kawaikute Gomen', src: 'NeuroMusic/Kawaikute Gomen.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro X Evil - GODS', src: 'NeuroMusic/GODS.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Racing Into The Night', src: 'NeuroMusic/Racing Into The Night.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Want You Gone', src: 'NeuroMusic/Want You Gone.mp3', image: 'trackimages/neurohead.jpg' },
 ];
 
 let currentTrack = 0;
