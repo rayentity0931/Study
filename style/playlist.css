@@ -110,7 +110,7 @@
   max-width: 300px; /* 限制最大寬度 */
   height: auto; /* 自動調整高度 */
   position: absolute;
-  top: 125px;
+  top: 90px;
   left: 50%;
   transform: translate(-50%, -50%); /* 讓它真正置中 */
 }
