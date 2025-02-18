@@ -102,3 +102,15 @@
         gap: 8px;
     }
 }
+
+.playlist-container #userInput {
+  font-size: clamp(18px, 4vw, 20px); /* 使用 clamp 來設置字體大小的範圍 */
+  padding: clamp(10px, 2vw, 15px); /* 使用 clamp 來設置內邊距的範圍 */
+  width: 60%; /* 使用百分比來讓寬度根據螢幕大小調整 */
+  max-width: 300px; /* 限制最大寬度 */
+  height: auto; /* 自動調整高度 */
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 讓它真正置中 */
+}

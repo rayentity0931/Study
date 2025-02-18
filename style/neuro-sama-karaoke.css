@@ -214,7 +214,7 @@ audio::-webkit-media-controls-panel {
   overflow-y: auto;
   position: fixed;
   left: 120px;
-  top: 180px;
+  top: 130px;
   font-size: 30px;
   color: #fff;
   overflow: auto;
@@ -244,9 +244,6 @@ audio::-webkit-media-controls-panel {
 
 @media (max-width: 768px) {
   .container #userInput {
-    font-size: clamp(10px, 5vw, 18px); /* 更改螢幕寬度小於 768px 時的字體大小範圍 */
-    padding: clamp(12px, 3vw, 18px); /* 調整內邊距 */
-    width: 80%; /* 調整寬度 */
-    max-width: 280px; /* 限制最大寬度 */
+    display: none; /* 隱藏在手機設備上的輸入框 */
   }
 }

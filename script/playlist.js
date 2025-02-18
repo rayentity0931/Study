@@ -39,3 +39,20 @@ document.querySelectorAll('.scroll-box p').forEach((songElement, index) => {
         }
     });
 });
+
+const userInput = document.getElementById('userInput');
+const songElements = document.querySelectorAll('.scroll-box p');
+
+userInput.addEventListener('input', () => {
+    const filterText = userInput.value.toLowerCase(); // 取得小寫字母
+
+    songElements.forEach((songElement) => {
+        const songName = songElement.textContent.toLowerCase();
+        // 檢查歌名是否包含輸入的文字
+        if (songName.includes(filterText)) {
+            songElement.style.display = 'block'; // 顯示符合的歌曲
+        } else {
+            songElement.style.display = 'none';  // 隱藏不符合的歌曲
+        }
+    });
+});
