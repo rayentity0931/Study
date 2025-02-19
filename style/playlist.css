@@ -104,8 +104,8 @@
 }
 
 .playlist-container #userInput {
-  font-size: clamp(18px, 4vw, 20px); /* 使用 clamp 來設置字體大小的範圍 */
-  padding: clamp(10px, 2vw, 15px); /* 使用 clamp 來設置內邊距的範圍 */
+  font-size: clamp(18px, 4vw, 20px); /* 設置字體大小的範圍 */
+  padding: clamp(10px, 2vw, 15px); /* 設置內邊距的範圍 */
   width: 60%; /* 使用百分比來讓寬度根據螢幕大小調整 */
   max-width: 300px; /* 限制最大寬度 */
   height: auto; /* 自動調整高度 */
@@ -113,4 +113,24 @@
   top: 90px;
   left: 50%;
   transform: translate(-50%, -50%); /* 讓它真正置中 */
+  
+  /* 透明背景與美化 */
+  background-color: transparent; /* 設為透明 */
+  border: 2px solid rgba(108, 99, 255, 0.8); /* 半透明邊框 */
+  border-radius: 10px; /* 圓角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 增加陰影 */
+  color: #fff; /* 文字顏色設為白色，適合深色背景 */
+  transition: all 0.3s ease-in-out; /* 過渡效果 */
+}
+
+/* 當獲取焦點時的效果 */
+.playlist-container #userInput:focus {
+  border-color: rgba(79, 77, 184, 1); /* 深色邊框 */
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.5);
+  outline: none; /* 移除默認的外框 */
+}
+
+/* 設置 placeholder 的顏色 */
+.playlist-container #userInput::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* 半透明白色 */
 }
