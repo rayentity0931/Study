@@ -36,6 +36,7 @@ const audioFiles = [
     { name: 'Neuro - After Dark', src: 'NeuroMusic/After Dark.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Evil - Centuries', src: 'NeuroMusic/Centuries.mp3', image: 'trackimages/neurohead.jpg' },
     { name: 'Neuro - Cupid', src: 'NeuroMusic/Cupid.mp3', image: 'trackimages/neurohead.jpg' },
+    { name: 'Neuro - Anamanaguchi', src: 'NeuroMusic/Anamanaguchi.mp3', image: 'trackimages/neurohead.jpg' },
 ];
 
 let currentTrack = 0;
