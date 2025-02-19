@@ -47,7 +47,7 @@ h1 {
     backdrop-filter: blur(10px); /* 背景模糊 */
     -webkit-backdrop-filter: blur(10px); /* 兼容 Safari */
     color: transparent;
-    font-size: 4vw; /* 根據螢幕寬度調整字體大小 */
+    font-size: clamp(2.3em, 4vw, 5em); /* 根據螢幕寬度調整字體大小 */
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 陰影效果 */
@@ -55,6 +55,7 @@ h1 {
     top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
     -webkit-text-stroke: 1px black;
     font-family: "Comic Sans MS", "Chalkboard SE", "Arial Rounded MT Bold", cursive;
 
