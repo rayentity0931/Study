@@ -70,43 +70,43 @@ body {
 }
 
 .music-player-body {
-  width: clamp(320px, 60vw, 480px);
-  height: auto;
+  width: clamp(320px, 60vw, 480px); /* 最大寬度設定為 480px，最小為 320px，並根據視窗寬度進行縮放 */
+  height: clamp(200px, 80vh, 580px); /* 最大高度為 580px，最小為 200px，並根據視窗高度縮放 */
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
-  border-radius: 20px;
-  padding: 3vw;
+  border-radius: 20px; /* 保持圓角比例 */
+  padding: 3vw; /* 內邊距根據視窗寬度進行縮放 */
   text-align: center;
   overflow: visible;
-  display: block;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: auto; /* 讓它水平置中 */
+  margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 讓它真正置中 */
+  transform: translate(-50%, -50%);
 }
 
 h2 {
-  font-size: clamp(2em, 4vw, 3em);
+  font-size: clamp(2em, 4vw, 3em); /* 文字大小最大為 3em，最小為 0.8em，並根據視窗寬度縮放 */
   color: #fff;
 }
 
 h3 {
-  font-size: clamp(1em, 3vw, 1.2em);
+  font-size: clamp(1.2em, 3vw, 1.2em); /* 副標題的大小最大為 1.2em，最小為 0.6em，並根據視窗寬度縮放 */
   margin-top: 0px;
   color: #fff;
 }
 
 .track-image {
-  width: clamp(100px, 80%, 300px);
-  height: auto;
-  max-height: 300px; /* 避免圖片過高 */
-  margin-top: 2vh; /* 讓間距跟著變化 */
+  width: clamp(20px, 80%, 300px); /* 圖片寬度最大為 300px，最小為 20px，並根據視窗寬度縮放 */
+  height: auto; /* 保持比例 */
+  max-height: 60%; /* 也限制圖片的最大高度 */
+  margin-top: 2vh; /* 讓間距根據螢幕縮放 */
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 10px; /* 圓角固定，保持與圖片的比例 */
   outline: none;
 }
 
@@ -118,7 +118,7 @@ audio {
   display: block; /* 顯示為區塊元素 */
   background: transparent; /* 隱藏背景 */
   border: none; /* 隱藏邊框 */
-  display: none; /* 隱藏原生控件 */
+  display: none;
 }
 
 /* 隱藏原生音頻控件進度條和控制面板 */
@@ -129,8 +129,8 @@ audio::-webkit-media-controls-panel {
 /* 自定義進度條容器 */
 .custom-progress-container {
   width: 100%;
-  height: 10px; /* 調整進度條高度 */
-  background-color: #5c5c5c; /* 背景顏色 */
+  height: 9px; /* 進度條高度最大為 12px，最小為 8px，並根據視窗高度調整 */
+  background-color: #5c5c5c;
   border-radius: 5px;
   margin-top: 10px;
 }
@@ -138,7 +138,7 @@ audio::-webkit-media-controls-panel {
 /* 自定義進度條進度部分 */
 .custom-progress {
   height: 100%;
-  background-color: #f8c5f1; /* 進度條顏色 */
+  background-color: #f8c5f1;
   border-radius: 5px;
   width: 0%; /* 初始進度為 0% */
 }
@@ -148,7 +148,7 @@ audio::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  gap: 5px;
+  gap: 5px; /* 按鈕間距也會根據螢幕寬度變化 */
 }
 
 .controls button {
@@ -156,9 +156,9 @@ audio::-webkit-media-controls-panel {
   color: #fff;
   border: none;
   border-radius: 15px;
-  width: clamp(40px, 15vw, 60px);
-  height: clamp(35px, 12vw, 52px);
-  font-size: clamp(20px, 4vw, 35px);
+  width: clamp(20px, 10vh, 60px); /* 按鈕寬度最大為 60px，最小為 40px，並根據視窗寬度調整 */
+  height: clamp(15px, 8vh, 52px); /* 按鈕高度最大為 52px，最小為 35px，並根據視窗寬度調整 */
+  font-size: clamp(10px, 4vh, 35px); /* 按鈕文字大小最大為 35px，最小為 20px，並根據視窗寬度調整 */
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -169,6 +169,7 @@ audio::-webkit-media-controls-panel {
 .controls button:hover {
   background-color: #91deffd3;
 }
+
 
 .container .scroll-box p {
   display: block;
@@ -264,6 +265,12 @@ audio::-webkit-media-controls-panel {
 }
 
 @media (max-width: 768px) {
+  .container #userInput {
+    display: none; /* 隱藏在手機設備上的輸入框 */
+  }
+}
+
+@media (max-height: 900px) {
   .container #userInput {
     display: none; /* 隱藏在手機設備上的輸入框 */
   }

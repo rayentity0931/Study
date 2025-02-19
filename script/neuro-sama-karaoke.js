@@ -108,7 +108,7 @@ const songList = document.querySelector('.scroll-box');
 let isListVisible = false;
 
 // 檢查是否為手機設備
-const isMobile = window.innerWidth <= 768;
+const isMobile = window.innerWidth <= 1400;
 
 toggleListButton.addEventListener('click', () => {
     if (isMobile) {
