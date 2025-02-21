@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery {
+    column-count: auto;
+    column-width: 400px; /* 控制每列的寬度 */
+    column-gap: 15px;
+    padding: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    break-inside: avoid; /* 避免圖片被截斷 */
+    margin-bottom: 15px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 保持圖片比例 */
+    border-radius: 8px;
+}
