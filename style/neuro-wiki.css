@@ -1,0 +1,125 @@
+* {
+    font-family: helvetica, arial, sans-serif;
+  }  
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffddf1;
+}
+
+header {
+    background-color: #ffddf1;
+    color: rgb(148, 89, 89);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    overflow-y: auto;
+    background: rgb(139, 87, 103);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #fdd3f3;
+    padding-bottom: 5px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+li {
+    color: white;
+    font-size: 1.5em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.float-image {
+    float: right; /* 讓圖片靠左，文字繞過它 */
+    margin-left: 15px; /* 讓文字與圖片之間有一些間距 */
+    max-width: 200px; /* 控制圖片大小 */
+    height: auto;
+}
+
+/* 用來放置圖片的容器，並使其固定在左右，且上下左右都置中 */
+.side-images {
+    position: fixed;
+    top: 160px;  /* 固定在頁面頂部 */
+    left: 0;  /* 左邊的圖片固定 */
+    right: 0;  /* 右邊的圖片固定 */
+    display: flex;
+    justify-content: space-between; /* 使圖片分佈在左右 */
+    align-items: center;  /* 垂直置中圖片 */
+    height: 100vh;  /* 容器的高度是視口高度 */
+    z-index: -1;  /* 確保圖片在後面，讓內容區域顯示在前面 */
+}
+
+.left-image {
+    width: 550px;
+    height: auto;
+}
+
+.right-image {
+    width: 550px;
+    height: auto;
+}
+
+.outfit {
+    width: auto;
+    height: 200px;
+}
