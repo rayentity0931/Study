@@ -37,7 +37,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 main {
@@ -53,18 +53,17 @@ section {
     margin-bottom: 20px;
 }
 
-section ul p {
-    cursor: pointer;
-}
-
 h2 {
     border-bottom: 2px solid #fdd3f3;
     padding-bottom: 5px;
     color: white;
+    font-size: 2em;
 }
 
 p {
     color: white;
+    line-height: 28px;
+    font-size: 1.2em;
 }
 
 li {
@@ -98,6 +97,8 @@ footer {
     margin-left: 15px; /* 讓文字與圖片之間有一些間距 */
     max-width: 200px; /* 控制圖片大小 */
     height: auto;
+    display: inline-block;
+    margin-top: -20px;
 }
 
 /* 用來放置圖片的容器，並使其固定在左右，且上下左右都置中 */
@@ -126,4 +127,20 @@ footer {
 .outfit {
     width: auto;
     height: 200px;
+}
+
+#features p {
+    cursor: pointer;
+}
+
+#work a {
+    text-decoration: none; /* 去掉底線 */
+    color: white; /* 變白色 */
+    display: inline-block; /* 讓每個連結獨占一行 */
+    padding: 5px 0; /* 增加上下間距 */
+}
+
+#work a:hover {
+    text-decoration: underline;
+    color: rgb(234, 198, 255);
 }
