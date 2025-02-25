@@ -4,11 +4,31 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(252, 220, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* To prevent content from being hidden behind the fixed search bar */
 }
 
+#tagSearch {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    z-index: 10; /* Ensure it's on top of other content */
+}
+
+
 .gallery {
-    column-count: auto;
-    column-width: 400px;
+    column-count: 5;
+    column-width: 200px;
     column-gap: 15px;
     padding: 30px;
 }
