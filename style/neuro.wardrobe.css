@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px; /* To prevent content from being hidden behind the fixed search bar */
+    padding-top: 60px;
 }
 
 #tagSearch {
@@ -22,7 +22,7 @@ body {
     border: 2px solid #ccc;
     border-radius: 12px;
     text-align: center;
-    z-index: 10; /* Ensure it's on top of other content */
+    z-index: 10;
 }
 
 
@@ -35,7 +35,7 @@ body {
 
 .gallery img {
     width: 100%;
-    break-inside: avoid; /* 避免圖片被截斷 */
+    break-inside: avoid;
     margin-bottom: 15px;
     border-radius: 12px;
 }
@@ -55,6 +55,6 @@ body {
 .image img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* 保持圖片比例 */
+    object-fit: cover;
     border-radius: 8px;
 }

@@ -45,8 +45,8 @@ header {
 
 .navigation {
   display: flex;
-  gap: clamp(10px, 3vw, 20px); /* 讓按鈕間距隨裝置變化 */
-  margin-left: auto; /* 確保導航靠右 */
+  gap: clamp(10px, 3vw, 20px);
+  margin-left: auto;
 }
 
 .navigation a {

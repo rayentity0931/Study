@@ -47,12 +47,12 @@ body {
 }
 
 .music-player-body {
-  width: clamp(320px, 60vw, 480px); /* 最大寬度設定為 480px，最小為 320px，並根據視窗寬度進行縮放 */
-  height: clamp(200px, 80vh, 580px); /* 最大高度為 580px，最小為 200px，並根據視窗高度縮放 */
+  width: clamp(320px, 60vw, 480px);
+  height: clamp(200px, 80vh, 580px);
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
-  border-radius: 20px; /* 保持圓角比例 */
-  padding: 3vw; /* 內邊距根據視窗寬度進行縮放 */
+  border-radius: 20px;
+  padding: 3vw;
   text-align: center;
   overflow: visible;
   display: flex;
@@ -67,57 +67,53 @@ body {
 }
 
 h2 {
-  font-size: clamp(2em, 4vw, 3em); /* 文字大小最大為 3em，最小為 0.8em，並根據視窗寬度縮放 */
+  font-size: clamp(2em, 4vw, 3em);
   color: #fff;
 }
 
 h3 {
-  font-size: clamp(1.2em, 3vw, 1.2em); /* 副標題的大小最大為 1.2em，最小為 0.6em，並根據視窗寬度縮放 */
+  font-size: clamp(1.2em, 3vw, 1.2em);
   margin-top: 0px;
   color: #fff;
 }
 
 .track-image {
-  width: clamp(20px, 80%, 300px); /* 圖片寬度最大為 300px，最小為 20px，並根據視窗寬度縮放 */
-  height: auto; /* 保持比例 */
-  max-height: 60%; /* 也限制圖片的最大高度 */
-  margin-top: 2vh; /* 讓間距根據螢幕縮放 */
+  width: clamp(20px, 80%, 300px);
+  height: auto;
+  max-height: 60%;
+  margin-top: 2vh;
   border: 3px solid black;
-  border-radius: 10px; /* 圓角固定，保持與圖片的比例 */
+  border-radius: 10px;
   outline: none;
 }
 
-/* 音頻播放器設置 */
 audio {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  display: block; /* 顯示為區塊元素 */
-  background: transparent; /* 隱藏背景 */
-  border: none; /* 隱藏邊框 */
+  display: block;
+  background: transparent;
+  border: none;
   display: none;
 }
 
-/* 隱藏原生音頻控件進度條和控制面板 */
 audio::-webkit-media-controls-panel {
   display: none;
 }
 
-/* 自定義進度條容器 */
 .custom-progress-container {
   width: 100%;
-  height: 9px; /* 進度條高度最大為 12px，最小為 8px，並根據視窗高度調整 */
+  height: 9px;
   background-color: #5c5c5c;
   border-radius: 5px;
   margin-top: 10px;
 }
 
-/* 自定義進度條進度部分 */
 .custom-progress {
   height: 100%;
   background-color: #f8c5f1;
   border-radius: 5px;
-  width: 0%; /* 初始進度為 0% */
+  width: 0%;
 }
 
 .controls {
@@ -125,7 +121,7 @@ audio::-webkit-media-controls-panel {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  gap: 5px; /* 按鈕間距也會根據螢幕寬度變化 */
+  gap: 5px;
 }
 
 .controls button {
@@ -133,9 +129,9 @@ audio::-webkit-media-controls-panel {
   color: #fff;
   border: none;
   border-radius: 15px;
-  width: clamp(20px, 10vh, 60px); /* 按鈕寬度最大為 60px，最小為 40px，並根據視窗寬度調整 */
-  height: clamp(15px, 8vh, 52px); /* 按鈕高度最大為 52px，最小為 35px，並根據視窗寬度調整 */
-  font-size: clamp(10px, 4vh, 35px); /* 按鈕文字大小最大為 35px，最小為 20px，並根據視窗寬度調整 */
+  width: clamp(20px, 10vh, 60px);
+  height: clamp(15px, 8vh, 52px);
+  font-size: clamp(10px, 4vh, 35px);
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -164,7 +160,6 @@ audio::-webkit-media-controls-panel {
   background-color: #8adcff94;
 }
 
-/* 按鈕樣式 */
 .toggle-list-button {
   position: fixed;
   top: 20px;
@@ -184,7 +179,6 @@ audio::-webkit-media-controls-panel {
   background-color: #91deffd3;
 }
 
-/* 初始狀態下，歌單隱藏 */
 .scroll-box {
   width: 350px;
   height: 700px;
@@ -201,54 +195,50 @@ audio::-webkit-media-controls-panel {
   -ms-overflow-style: none;
   line-height: 1.5;
   pointer-events: none;
-  display: none; /* 隱藏歌單 */
+  display: none;
 }
 
-/* 顯示歌單時 */
 .scroll-box.show {
   display: block;
 }
 
 .container #userInput {
-  font-size: clamp(18px, 4vw, 20px); /* 設置字體大小的範圍 */
-  padding: clamp(10px, 2vw, 15px); /* 設置內邊距的範圍 */
-  width: 60%; /* 使用百分比來讓寬度根據螢幕大小調整 */
-  max-width: 300px; /* 限制最大寬度 */
-  height: auto; /* 自動調整高度 */
+  font-size: clamp(18px, 4vw, 20px);
+  padding: clamp(10px, 2vw, 15px);
+  width: 60%;
+  max-width: 300px;
+  height: auto;
   position: absolute;
   top: 125px;
   left: 50%;
-  transform: translate(-50%, -50%); /* 讓它真正置中 */
+  transform: translate(-50%, -50%);
   
-  /* 透明背景與美化 */
-  background-color: transparent; /* 設為透明 */
-  border: 2px solid rgba(108, 99, 255, 0.8); /* 半透明邊框 */
-  border-radius: 10px; /* 圓角 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 增加陰影 */
-  color: #fff; /* 文字顏色設為白色，適合深色背景 */
-  transition: all 0.3s ease-in-out; /* 過渡效果 */
+  background-color: transparent;
+  border: 2px solid rgba(108, 99, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
-/* 當獲取焦點時的效果 */
 .container #userInput:focus {
-  border-color: rgba(79, 77, 184, 1); /* 深色邊框 */
+  border-color: rgba(79, 77, 184, 1);
   box-shadow: 0 0 10px rgba(108, 99, 255, 0.5);
-  outline: none; /* 移除默認的外框 */
+  outline: none;
 }
 
-/* 設置 placeholder 的顏色 */
 .container #userInput::placeholder {
-  color: rgba(255, 255, 255, 0.6); /* 半透明白色 */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 768px) {
   .container #userInput {
-    display: none; /* 隱藏在手機設備上的輸入框 */
+    display: none;
   }
 }
 
 @media (max-height: 900px) {
   .container #userInput {
-    display: none; /* 隱藏在手機設備上的輸入框 */
+    display: none;
   }
 }

@@ -93,25 +93,24 @@ footer {
 }
 
 .float-image {
-    float: right; /* 讓圖片靠左，文字繞過它 */
-    margin-left: 15px; /* 讓文字與圖片之間有一些間距 */
-    max-width: 200px; /* 控制圖片大小 */
+    float: right;
+    margin-left: 15px;
+    max-width: 200px;
     height: auto;
     display: inline-block;
     margin-top: -20px;
 }
 
-/* 用來放置圖片的容器，並使其固定在左右，且上下左右都置中 */
 .side-images {
     position: fixed;
-    top: 160px;  /* 固定在頁面頂部 */
-    left: 0;  /* 左邊的圖片固定 */
-    right: 0;  /* 右邊的圖片固定 */
+    top: 160px;
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between; /* 使圖片分佈在左右 */
-    align-items: center;  /* 垂直置中圖片 */
-    height: 100vh;  /* 容器的高度是視口高度 */
-    z-index: -1;  /* 確保圖片在後面，讓內容區域顯示在前面 */
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
 }
 
 .left-image {
@@ -134,10 +133,10 @@ footer {
 }
 
 #work a {
-    text-decoration: none; /* 去掉底線 */
-    color: white; /* 變白色 */
-    display: inline-block; /* 讓每個連結獨占一行 */
-    padding: 5px 0; /* 增加上下間距 */
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px 0;
 }
 
 #work a:hover {
